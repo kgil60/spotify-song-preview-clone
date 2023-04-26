@@ -1,0 +1,239 @@
+/// Homepage Styles File
+
+// -------------- MOBILE SIZE --------------
+
+body {
+  background: #121212;
+}
+
+#home-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.song-preview-card {
+  position: absolute;
+  width: 343px;
+  height: 537px;
+  left: 16px;
+  top: 137px;
+
+  background: #9296C4;
+  border-radius: 24px;
+}
+
+.song-image-container {
+  position: absolute;
+  width: 311px;
+  height: 311px;
+  left: 16px;
+  top: 16px;
+  filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.1));
+}
+
+.song-cover {
+  position: absolute;
+  width: 311px;
+  height: 311px;
+  left: 0px;
+  top: 0px;
+  border-radius: 16px;
+}
+
+.additional-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+  position: absolute;
+  width: 92px;
+  height: 66px;
+  left: 32px;
+  top: 351px;
+}
+
+.song-title {
+  width: 42px;
+  height: 29px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+.artist-name {
+  width: 92px;
+  height: 25px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+}
+
+.song-time-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  position: absolute;
+  width: 64px;
+  height: 25px;
+  left: 247px;
+  top: 392px;
+}
+
+.clock {
+  width: 20px;
+  height: 20px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.song-time {
+  width: 36px;
+  height: 25px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: right;
+  letter-spacing: -0.01em;;
+  color: #FFFFFF;
+}
+
+.bar {
+  position: absolute;
+  width: 279px;
+  height: 0px;
+  left: 32px;
+  top: 441px;
+  opacity: 0.2;
+  border:1.5px solid #FFFFFF;
+}
+
+.album-cover {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 32px;
+  top: 465px;
+}
+
+.album-cover-png {
+  position: absolute;
+  border-radius: 90px;
+}
+
+.album-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  position: absolute;
+  width: 226px;
+  height: 20px;
+  left: 84px;
+  top: 475px;
+}
+
+.album-info-text {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+}
+
+.album-info-dot-spacer {
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+// -------------- TABLET SIZE --------------
+
+@media (min-width: 834px) {
+  .song-preview-card {
+    width: 413px;
+    height: 607px;
+    left: 211px;
+    top: 293px;
+  }
+
+  .song-image-container {
+    width: 381px;
+    height: 381px;
+  }
+
+  .song-cover {
+    width: 381px;
+    height: 381px;
+  }
+
+  .additional-info-container {
+    top: 421px;
+  }
+
+  .song-title {
+    font-weight: 700;
+
+  }
+
+  .artist-name {
+    font-weight: 400;
+  }
+
+  .song-time-container {
+    left: 317px;
+    top: 462px;
+  }
+
+  .song-time {
+    font-weight: 400;
+  }
+
+  .bar {
+    width: 349px;
+    top: 511px;
+  }
+
+  .album-cover {
+    top: 535px;
+  }
+
+  .album-info {
+    width: 276px;
+    height: 25px;
+    left: 88px;
+    top: 542px;
+  }
+
+  .album-info-text {
+    font-weight: 400;
+  }
+}
+
+// -------------- DESKTOP SIZE --------------
+
+@media (min-width: 1440px) {
+  .song-preview-card {
+    left: 514px;
+    top: 101px;
+  }
+
+  .song-title {
+    width: 43px;
+  }
+}
